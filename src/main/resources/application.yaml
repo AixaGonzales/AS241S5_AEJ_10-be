@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: ia-project
+
+  data:
+    mongodb:
+      uri: mongodb+srv://aixa:yolanda2422mateo@cluster0.1by3wpy.mongodb.net/10_aixa_gonzales?retryWrites=true&w=majority
+      database: ia_project
+
+api:
+  rapidapi:
+    key: f63656e00bmsh88fe7a8d1a08cbdp170e67jsnb951773ffea6
+
+    chatgpt:
+      host: chatgpt-42.p.rapidapi.com
+
+    text-to-image:
+      host: ai-text-to-image-generator-flux-free-api.p.rapidapi.com
+
+server:
+  port: 8080
