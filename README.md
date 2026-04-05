@@ -1,37 +1,27 @@
-# Sistema de IA con Spring Boot + MongoDB + Integración de APIs
+# ChatGPT + Image Analyzer con Spring Boot
 
-Este proyecto es una API desarrollada con Spring Boot (WebFlux) que integra servicios de inteligencia artificial utilizando dos APIs externas:
+Servicio Cognitivo de RapidAPI basado en modelos de inteligencia artificial que permite generar respuestas conversacionales mediante ChatGPT y procesar imágenes mediante una API de visión artificial. El sistema envía solicitudes a servicios externos, obtiene respuestas automáticas y almacena las interacciones en una base de datos MongoDB de forma reactiva.
 
-- API de ChatGPT mediante RapidAPI para generación de respuestas conversacionales.
-- API de imágenes (visión artificial) para procesamiento/análisis de imágenes.
+Devuelve respuestas de texto generadas por el modelo y resultados de análisis de imágenes según la API utilizada.
 
-Además, todas las interacciones se almacenan en una base de datos MongoDB de forma reactiva.
+## 1. Cognitive Services
 
-El sistema permite enviar mensajes a un modelo de IA, obtener respuestas automáticas, procesar imágenes mediante servicios externos y guardar los resultados en la base de datos.
+Rapid API - ChatGPT  
+Generación de respuestas conversacionales mediante modelos de lenguaje natural.
 
----
+API de Imágenes (Visión Artificial)  
+Procesamiento y análisis de imágenes mediante servicios externos.
 
-## 1. APIs utilizadas
+## 2. Spring Boot
 
-- RapidAPI - ChatGPT: generación de texto conversacional mediante modelos de lenguaje natural.
-- API de imágenes (visión artificial): análisis y procesamiento de imágenes a través de servicios externos.
+Java: JDK 17  
+IDE: IntelliJ IDEA | Visual Studio Code  
+Maven: Apache Maven  
+Frameworks: Spring Boot  
 
----
+## 3. Maven Dependencias
 
-## 2. Tecnologías utilizadas
-
-- Java JDK 17  
-- Spring Boot  
-- Spring WebFlux  
-- Spring Data MongoDB Reactive  
-- Project Reactor  
-- WebClient  
-- Maven  
-- MongoDB  
-
----
-
-## 3. Dependencias principales
+Spring WebFlux | Data MongoDB Reactive | Project Reactor
 
 ```xml
 <dependency>
