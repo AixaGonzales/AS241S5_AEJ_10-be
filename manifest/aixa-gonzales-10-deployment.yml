@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: aixa-gonzales-10-deployment
+  namespace: aixa-gonzales-10-namespace
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: aixa-gonzales-10-deployment
+  template:
+    metadata:
+      labels:
+        app: aixa-gonzales-10-deployment
+    spec:
+      containers:
+      - name: aixa-gonzales-10-container
+        image: juan321/age-detector-be:1.0
+        imagePullPolicy: IfNotPresent
+        env:
+        - name: PORT
+          value: "8085"
+        - name: SERVER_URL
+          value: "http://localhost:8085"
+        envFrom:
+        - secretRef:
+            name: aixa-gonzales-10-secret
