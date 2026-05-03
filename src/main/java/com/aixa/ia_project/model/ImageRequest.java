@@ -17,10 +17,12 @@ public class ImageRequest {
     private String prompt;
     private String imageUrl;
     private LocalDateTime createdAt;
+    private Boolean active = true;
     
     public ImageRequest(String prompt, String imageUrl) {
         this.prompt = prompt;
         this.imageUrl = imageUrl;
         this.createdAt = LocalDateTime.now();
+        this.active = true;
     }
 }

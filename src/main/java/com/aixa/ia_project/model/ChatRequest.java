@@ -17,10 +17,5 @@ public class ChatRequest {
     private String prompt;
     private String response;
     private LocalDateTime createdAt;
-    
-    public ChatRequest(String prompt, String response) {
-        this.prompt = prompt;
-        this.response = response;
-        this.createdAt = LocalDateTime.now();
-    }
+    private Boolean active = true;
 }
