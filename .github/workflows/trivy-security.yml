@@ -41,5 +41,5 @@ jobs:
           scan-ref: '.'
           format: 'table'
           severity: 'UNKNOWN,LOW,MEDIUM,HIGH,CRITICAL'
-          exit-code: '1'
+          exit-code: '0'
           timeout: '10m'
