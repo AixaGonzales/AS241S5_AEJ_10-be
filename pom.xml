@@ -23,6 +23,7 @@
         <lombok.version>1.18.36</lombok.version>
         <maven-compiler-plugin.version>3.13.0</maven-compiler-plugin.version>
         <!-- CONFIGURACION SONARCLOUD -->
+        <sonar.projectKey>AS241S5_AEJ_10-be</sonar.projectKey>
         <sonar.organization>aixagonzales</sonar.organization>
         <sonar.host.url>https://sonarcloud.io</sonar.host.url>
     </properties>
