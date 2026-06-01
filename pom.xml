@@ -72,6 +72,10 @@
             <scope>test</scope>
         </dependency>
 
+        <properties>
+  <sonar.organization>aixagonzales</sonar.organization>
+</properties>
+
         <!-- Reactor Test -->
         <dependency>
             <groupId>io.projectreactor</groupId>
