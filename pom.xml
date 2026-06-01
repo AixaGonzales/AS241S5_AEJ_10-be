@@ -22,6 +22,9 @@
         <java.version>17</java.version>
         <lombok.version>1.18.36</lombok.version>
         <maven-compiler-plugin.version>3.13.0</maven-compiler-plugin.version>
+        <!-- CONFIGURACION SONARCLOUD -->
+        <sonar.organization>aixagonzales</sonar.organization>
+        <sonar.host.url>https://sonarcloud.io</sonar.host.url>
     </properties>
 
     <dependencies>
@@ -57,7 +60,7 @@
             <optional>true</optional>
         </dependency>
 
-        <!-- Lombok (versión actualizada) -->
+        <!-- Lombok -->
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
@@ -71,10 +74,6 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
-
-        <properties>
-  <sonar.organization>aixagonzales</sonar.organization>
-</properties>
 
         <!-- Reactor Test -->
         <dependency>
