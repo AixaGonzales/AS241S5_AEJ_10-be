@@ -23,4 +23,4 @@ jobs:
               "text": "Pipeline completado - Repositorio: ${{ github.repository }} - Rama: ${{ github.ref_name }} - Autor: ${{ github.actor }} - Estado: Exitoso - Ver: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
             }
       env:
-        SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+        SLACK_WEBHOOK_URL: ${{ secrets.MI_TOKEN }}
