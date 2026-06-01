@@ -1,0 +1,16 @@
+name: "Notificacion ntfy"
+
+on:
+  push:
+    branches: [ develop ]
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Enviar notificacion
+        run: |
+          curl -H "Title: Pipeline completado" \
+               -H "Tags: white_check_mark" \
+               -d "Repositorio: ${{ github.repository }} - Rama: ${{ github.ref_name }} - Autor: ${{ github.actor }}" \
+               https://ntfy.sh/mis-pipelines-ia
