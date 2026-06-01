@@ -5,13 +5,9 @@ on:
     branches:
       - develop
       - main
-  pull_request:
-    branches:
-      - develop
 
 jobs:
   build:
-    name: Build and analyze
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -27,8 +23,4 @@ jobs:
       - name: Build and analyze
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-        run: |
-          mvn clean verify sonar:sonar \
-            -Dsonar.projectKey=AS241S5_AEJ_10-be \
-            -Dsonar.organization=aixagonzales \
-            -Dsonar.host.url=https://sonarcloud.io
+        run: mvn clean verify sonar:sonar
