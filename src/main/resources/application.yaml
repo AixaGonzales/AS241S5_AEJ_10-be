@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: ia-project
+
+  data:
+    mongodb:
+      uri: mongodb+srv://aixa:yolanda2422mateo@cluster0.1by3wpy.mongodb.net/10_aixa_gonzales?retryWrites=true&w=majority
+      database: ia_project
+
+api:
+  rapidapi:
+    key: 143d769a95mshe111f56f5f35c91p1a2a35jsn10d48c6e6a4e
+    chatgpt:
+      host: open-ai21.p.rapidapi.com
+    text-to-image:
+      host: ai-text-to-image-generator-flux-free-api.p.rapidapi.com
+
+server:
+  port: 8080
+
+logging:
+  level:
+    com.aixa: DEBUG
+    org.springframework.web.reactive.function.client: DEBUG
