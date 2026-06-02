@@ -19,9 +19,5 @@ IDE: IntelliJ IDEA | Visual Studio Code
 Maven: Apache Maven  
 Frameworks: Spring Boot  
 
-## 3. Maven Dependencias
 
-Spring WebFlux | Data MongoDB Reactive | Project Reactor
-
-```xml
 
