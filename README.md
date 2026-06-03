@@ -14,7 +14,7 @@ Procesamiento y análisis de imágenes mediante servicios externos.
 
 ## 2. Spring Boot
 
-Java: JDK 17  
+
 IDE: IntelliJ IDEA | Visual Studio Code  
 Frameworks: Spring Boot  
 
