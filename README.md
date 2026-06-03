@@ -16,7 +16,6 @@ Procesamiento y análisis de imágenes mediante servicios externos.
 
 Java: JDK 17  
 IDE: IntelliJ IDEA | Visual Studio Code  
-Maven: Apache Maven  
 Frameworks: Spring Boot  
 
 
